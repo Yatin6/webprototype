@@ -1,0 +1,144 @@
+@import "style.css";
+/* set the background color of the header */
+header.primary {
+    background: #63cbe2;
+}
+/* add the margin bottom for the image on the right half of the "book" */
+.mb20 {
+    margin-bottom: 20px;
+}
+/* import the “book” as the background */
+.book {
+    background: url(images/book.png) no-repeat top center;
+    background-size: 100% 100%;
+    width: 1200px;
+    height: 716px;
+    overflow: hidden;
+}
+/* format for the left half content of the "book" */
+.book .bleft {
+    width: 38%;
+    margin: 70px 4% 0px 8%;
+    float: left;
+    position: relative;
+    height: 100%;
+}
+/* format for the right half content of the "book" */
+.book .bright {
+    width: 38%;
+    margin: 80px 8% 0px 4%;
+    float: left;
+    position: relative;
+    height: 100%;
+}
+/* format the article title */
+.book .bleft h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* format the paragraphs */
+.book p {
+    font-size: 14px;
+    line-height: 1.25;
+    margin-bottom: 15px;
+}
+/* position two arrows */
+.book a {
+    display: inline-block;
+    position: absolute;
+    bottom: 160px;
+}
+/* set the size of arrows */
+.book a img {
+    width: 50px;
+}
+/* further position the left arrow */
+.book .bleft a {
+    left: 0px;
+    margin-left: -16px;
+}
+/* further position the right arrow */
+.book .bright a {
+    right: 0px;
+    margin-right: -16px;
+    bottom: 170px;
+}
+
+/* When the width down to 1200px, the width of the "book" will reduce according to the page width, the height remain unchanged. */
+@media (max-width: 1200px){
+.book {
+    background: url(images/book.png) no-repeat top center;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 716px;
+    overflow: hidden;
+}
+}
+
+/* when the width down to 992px */
+@media (max-width: 992px) 
+{
+  /* the "book" will disappear */
+    .book {  
+    background: none;
+    height: auto;
+    overflow: hidden;
+}
+/* two images have max width of 100% */
+.book center img{ max-width:100%;}
+/* two arrows will be rearranged */
+.book .bleft a {
+    left: 0px;
+    right:0px;
+    margin-left: 0px; 
+}
+.book a {
+    display: inline-block;
+    position: absolute;
+    bottom: 0px;
+}
+.book .bright a {
+    right: 0px;
+    margin-right: 0px;
+    bottom: 0px;
+}
+}
+
+/* when the width down to 768px */
+@media (max-width: 768px) 
+{ 
+  /* the left and right content of the "book" won't float, so they will "stack" vertically and have 100% height */
+    .book .bleft {
+    width: 88%;
+    margin: 30px 6% 0px 6%;
+    float: none;
+    position: relative;
+    height: 100%;
+}
+.book .bright {
+    width: 88%;
+    margin: 30px 6% 0px 6%;
+    float: none;
+    position: relative;
+    height: 100%;
+}
+
+.book {
+    background: none;
+    height: auto;
+    overflow: inherit; 
+}
+/* two arrows will be rearranged */
+.book a {
+    display: inline-block;
+    position: absolute;
+    bottom: -38px;
+    margin:0 auto;
+}
+.book .bright a {
+    right: 0px;
+    margin-right: 0px;
+    bottom: -52px;
+    margin:0 auto;
+}
+}

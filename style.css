@@ -1,0 +1,205 @@
+/* clear the margin and padding for all elements */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+/* set line height and background color to the body*/
+body {
+    line-height: 1.5;
+    background: #fad0e2;
+}
+/* no decoration for links and set color for it */
+a {
+    text-decoration: none;
+    color: #000;
+}
+/* set font families */
+p{
+  font-family: 'Open Sans', sans-serif;
+}
+h1,h2{
+  font-family: 'Secular One', sans-serif;
+}
+h3{
+  font-family: 'Bubblegum Sans', cursive;
+}
+/* clear the style for lists */
+ul,
+li {
+    list-style: none;
+}
+/* set the font family for buttons and clear the trace after clicking on them */
+button{
+  font-family: 'Secular One', sans-serif;
+  outline:0;
+}
+/* when hover on any buttons, the mouse will become pointer */
+button:hover{
+cursor: pointer;
+}
+/* set the width and center */
+.w1200 {
+    width: 1200px;
+    margin: 0 auto;
+}
+/* format elements in header */
+header {
+    padding: 40px 0px;
+}
+header .logo {
+    float: left;
+}
+header .w1200 {
+    overflow: hidden;
+}
+header nav {
+    float: right;
+}
+header nav ul {
+    overflow: hidden;
+}
+header nav ul li{
+    float: left;
+    margin-right: 30px;
+    width: 120px; 
+    padding: 0px 3px;
+}
+/* format for the navigations which are the same besides the main page and add animations for them */
+header nav ul li button{
+    border: 1px solid #000;
+    background-color: transparent;
+    padding: 0px 3px;
+    text-align: left;
+    line-height: 1.2;
+    display: block;
+    min-height: 38px;    
+    max-width: 100px;
+    font-family: myriad-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    transition-property: transform,color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+/* the border will disappear and the size will scale up a bit when hover on the navigation button */
+header nav ul li button:hover {
+  transform: scale(1.1);
+  border:none;
+} 
+/* words in the button will turn to white after clicked on them */
+header nav ul li button:focus{
+  color: white;
+}
+/* set the size for the logo */
+header.primary .logo img {
+    width: 220px;
+}
+/* format the title(h1) in the header with "primary" class */
+header.primary h1 {
+    text-align: center;
+    color: #000;
+    font-size: 55px;
+    margin-top: -15px;
+}
+/* format the "back" button */
+header.primary .back {
+    background-color: transparent;
+    border: 0;
+    background: url(images/border.png) no-repeat top center;
+    font-size: 18px;
+    color: #fff;
+    padding: 5px 20px 5px 30px;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+/* set the margin top for those "main" with class "pics" */
+main.pics {
+    margin-top: 60px;
+}
+/* format the footer */
+footer {
+    margin-top:100px;
+    background: #3d4750;
+    padding: 30px 0px;
+    text-align: center;
+}
+/* position the facebook image */
+footer .link {
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* set the facebook image */
+footer .link img {
+    display: inline-block;
+    width: 50px;
+}
+/* the information sentence of the insitution */
+footer p {
+    color: #fff;
+    line-height: 30px;
+}
+
+
+
+
+/* when the max width is 1200px */
+@media (max-width: 1200px){
+   .w1200 {
+    width: 100%;
+    margin: 0 auto;
+} 
+}
+
+/* when the max width is 1000px */
+@media (max-width: 1000px)
+{
+  /* the logo will in the center */
+    header .logo {
+    float: none;
+    text-align:center;
+}
+
+/* position the navigation for contact, creature and primary pages on top the to center */
+header nav {
+    float: none;
+    width:100%;
+    text-align:center;
+    margin:20px 0px;
+}
+header nav ul {
+    display:inline-block;
+}
+header nav ul li {
+    float: left;
+    margin-right: 15px;
+    margin-left: 15px;
+    width: 120px;
+    padding: 0px 3px;
+}
+}
+
+/* when the max width is 768px */
+@media (max-width: 768px){
+  /* make the title smaller */
+header.primary h1 { 
+    font-size: 30px;
+    margin-top: 0px;
+}
+}
+
+/* when the max width is 480px */
+@media (max-width: 480px){
+ main 
+ {
+    padding:0px 10px;
+}
+header.about nav ul li {
+    background: none !important;
+    padding: 0px !important;
+    width: 33.33333333333333% !important;
+    margin-right: 0px !important;
+    height: auto !important;
+    text-align: center !important;
+    margin-bottom:20px;
+}
+}

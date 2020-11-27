@@ -1,0 +1,172 @@
+@import "style.css";
+/* set the background color of the header */
+header.primary {
+    background: #8b7eba;
+}
+/* position the big image */
+main img {
+    float: right;
+    width: 400px;
+    height: 250px;
+}
+/* The set the width and center the form between left and the picture */
+form {
+    width: 1000px;
+    margin: 0 auto;
+}
+/* clear the flow effect and set margin bottom for the form */
+form .form {
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+/* the trace won't show when click on the input box or selection */
+form input,
+form select {
+    outline: 0;
+}
+/* style the labels */
+form label {
+    display: block;
+    font-family: "Secular One", sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+/* put the first name and last name in a row and float from left to right */
+form .form .fl,
+form .form .fr {
+    float: left;
+}
+/* position the last name label and input on the right of the first name ones*/
+form .form .fl {
+    margin-right: 40px;
+}
+/* style the input box for the "text" and "tel"type*/
+form input[type="text"],
+form input[type="tel"] {
+    font-size: 18px;
+    width: 100%;
+    padding: 10px 18px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+}
+/* a colored border will appear when the user click the input box and focus on it  */
+form input:focus {
+    border: 3px solid #8b7eba;
+}
+/* set the width for the name input box */
+form .form .fl input,
+form .form .fr input {
+    width: 160px;
+}
+/* set the width for the phone input box */
+form .form.tel input {
+    width: 200px;
+}
+/* set the width for the email, school and input box education selection box*/
+form .form.eamil input,
+form .form.school input,
+form .form.education select {
+    width: 400px;
+}
+/* format words inside the education selection box */
+form .form.education select {
+    font-size: 18px;
+    padding: 5px 0;
+}
+/* style the submit button */
+input[type="submit"] {
+    width: 100%;
+    font-family: 'Secular One', sans-serif;
+    font-size: 20px;
+    background-color: #8b7eba;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* the background color of the submit button will change when hover on it */
+input[type="submit"]:hover {
+    background-color: #7567ab;
+}
+/* style two choice circles */
+form input[type="radio"] {
+    vertical-align: middle;
+    zoom: 180%;
+    margin-right: 6px;
+}
+/* make "you are" item connect to the school item as they are relating to each other*/
+.form.you {
+    margin-bottom: 0px;
+}
+/* set vertical distance between two choices*/
+.form.you p {
+    margin-bottom: 10px;
+}
+/* The small icon for the name label */
+.form .name label {
+    background: url(images/name.png) no-repeat left center;
+    background-size: 27px 27px;
+    padding-left: 30px;
+}
+/* The small icon for the phone label */
+.form.tel label {
+    background: url(images/phone.png) no-repeat left center;
+    background-size: 27px 27px;
+    padding-left: 30px;
+}
+/* The small icon for the email label */
+.form.eamil label {
+    background: url(images/mail.png) no-repeat left center;
+    background-size: 27px 27px;
+    padding-left: 30px;
+}
+/* The small icon for the "you are" label */
+.form.you label {
+    background: url(images/question.png) no-repeat left center;
+    background-size: 27px 27px;
+    padding-left: 30px;
+}
+/* The small icon for the school label */
+.form.school label {
+    background: url(images/school.png) no-repeat left center;
+    background-size: 27px 27px;
+    padding-left: 30px;
+}
+/* The small icon for the education label */
+.form.education label {
+    background: url(images/question.png) no-repeat left center;
+    background-size: 27px 27px;
+    padding-left: 30px;
+}
+
+
+/* When the width down to 1000px */
+@media (max-width: 1000px){
+ /* the form will have 100% width its content area */
+form {
+    width: 100%;
+    margin: 0 auto;
+}
+}
+/* When the width down to 768px */   
+@media (max-width: 768px){
+/* the size of the title will reduced */ 
+header.primary h1 { 
+    font-size: 30px;
+    margin-top: 0px;
+}
+/* the image will not float and occupy a line */
+main img {
+    float: none;
+    width: 500px;
+    height: 250px;
+    max-width:100%;
+    
+}
+}
+

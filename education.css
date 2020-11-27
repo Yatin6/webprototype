@@ -1,0 +1,225 @@
+@import "style.css";
+/* position the title and set the size and weight for it*/
+h2{
+  float: left;
+  font-size: 50px;
+  font-weight: 500;
+}
+main .top {
+    overflow: hidden;
+}
+/* position the left image div and set width for this content */
+main .top .l {
+    float: left;
+    width: 25%;
+    margin-right: 5%;
+}
+/* the image on left will be full width in its div */
+main .top .l img {
+    width: 100%;
+}
+/* position the right sentence div and set width for it*/
+main .top .r {
+    float: right;
+    width: 70%;
+}
+/* set the margin bottom for the paragraph and also set font size for it*/
+main .top .r p {
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+/* style the "contact to eduaction team" button and add the animations for changing background and color */
+main .top .r button {
+    font-family: 'Secular One', sans-serif;
+    display: inline-block;
+    border: 3px solid #8B7EBA;;
+    color: black;
+    background-color: #fad0e2;
+    font-size: 18px;
+    padding: 1px 3px;
+    transition-property: background-color, color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+/* change the color of the button when hover on it*/
+main .top .r button:hover {
+  background-color: #8B7EBA;
+  color:white;
+}
+/* scale down a bit when click on the button */
+main .top .r button:active{
+  transform: scale(0.98);
+}
+/* add vertical distance from the top part */
+main .bottom {
+    margin-top: 40px;
+}
+main .bottom li {
+    overflow: hidden;
+}
+/* position the small title on the left of the list */
+main .bottom li .l {
+    float: left;
+    width: 27%;
+    line-height: 159px;
+    text-align: center;
+}
+/* set the font family and size for the small title on the left */
+main .bottom li .l h3 {
+  font-family: 'Secular One', sans-serif;
+  font-size: 20px;
+}
+/* position the image */
+main .bottom li .c {
+    float: left;
+    width: 27%;
+}
+/* make the image 100% width in its div, make it block and set the opacity to make it harmony to the background color of the row */
+main .bottom li .c img {
+    width: 100%;
+    display: block;
+    opacity: 0.8;
+}
+/* set the div hold the call to action sentence */
+main .bottom li .r {
+    float: right;
+    width: 46%;
+    overflow: hidden;
+    padding-top: 50px;
+}
+/* position the call to action sentences in its div */
+main .bottom li .r h3 {
+    float: left;
+    width: 42%;
+    margin: 0px 14%;
+}
+/* set the background color for the first list row */
+main .bottom li.l1 {
+    background: #80ccb7;
+}
+/* set the background color for the second list row */
+main .bottom li.l2 {
+    background: #63cbe2;
+}
+/* set the learn more in the ellipse shape */
+main .bottom li .r a {
+    font-family: 'Secular One', sans-serif;
+    text-align: center;
+    float: left;
+    display: block;
+    padding: 17px;
+    background: #fad0e2;
+    border-radius: 61px/30px;
+    width: 88px;
+}
+/* change the color of "learn more" in the first row to the background color of its list */
+main .bottom .l1 .r a:hover{
+  color: #80ccb7;
+}
+/* change the color of "learn more" in the second row to the background color of its list */
+main .bottom .l2 .r a:hover{
+  color: #63cbe2;;
+}
+
+/* when the max width is 1200px */
+@media (max-width: 1200px){
+/* set the picture and paragraph on top, they will still in a line */
+main .top .l {
+    float: left;
+    width: 40%;
+    margin-right: 5%;
+}
+main .top .r {
+    float: right;
+    width: 55%;
+}
+/* the every list item in the button will change from one row to two rows */
+main .bottom li .l {
+    float: left;
+    width: 50%;
+    line-height: 159px;
+    text-align: center;
+}
+main .bottom li .c {
+    float: left;
+    width: 50%;
+}
+main .bottom li .r {
+    float: none;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+}
+/* when the max width is 768px */
+@media (max-width: 768px)
+{
+    h2 {
+    float: none;
+    font-size: 50px;
+    font-weight: 500;
+    text-align:center;
+}
+/* set the picture and paragraph on top, they will not float and occupy the whole line */
+main .top .l {
+    float: none;
+    width: 100%;
+    margin-right: 0px;
+}
+main .top .r {
+    float: none;
+    width: 100%;
+}
+/* position the navigation  */
+header nav {
+    float: none;
+}
+header nav ul li {
+    float: left;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 21%;
+    padding: 0px 0px;
+}
+header nav ul li button 
+{
+    width:100%;
+    max-width: 100%;
+}
+}
+
+/* when the max width is 480px */
+@media (max-width: 480px){
+/* the every list item in the button will change from two rows to four rows */
+main .bottom li .l {
+    float: none;
+    width: 100%;
+    line-height: 159px;
+    text-align: center;
+}
+main .bottom li .c {
+    float: none;
+    width: 100%;
+}
+main .bottom li .r h3 {
+    float: none;
+    width: 72%;
+    margin: 0px 14%;
+}
+main .bottom li .r a { 
+    float: none; 
+    padding: 17px; 
+    width: 88px;
+    margin:20px auto 0px;
+}
+/* position the navigation */
+header nav ul li {
+    float: left;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 46%;
+    padding: 0px 0px;
+    margin-bottom:20px;
+}
+}

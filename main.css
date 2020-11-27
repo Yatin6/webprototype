@@ -1,0 +1,262 @@
+@import "style.css";
+/* set the background color of the header */
+header.about {
+    background: #6384C3;
+}
+/* set the size of the logo image */
+header.about .logo img {
+    width: 220px;
+}
+/* set navigation */
+header.about nav ul li {
+    float: left;
+    margin-right: 0px;
+    width: auto;
+    border: 0px solid #000;
+    padding: 39px 34px;
+    text-align: center;
+}
+/* set words in navigation */
+header.about nav ul li a {
+    color: #fff;
+    line-height: 1;
+    min-height: auto;
+    font-size: 14px;
+}
+/* the color of words in navigation will change when hover on them  */
+header.about nav ul li a:hover{
+  color:#1EC1E0;
+}
+/* import different shapes of marine animals' images as bacground images for the a tags of navigation and set positions for each of them */
+header.about nav ul li.a1 {
+    background: url(images/a1.png) no-repeat top center;
+    background-size: 100% 100%;
+}
+header.about nav ul li.a2 {
+    background: url(images/a2.png) no-repeat top center;
+    background-size: 100% 100%;
+    padding: 38px 21px;
+    margin-right: 20px;
+}
+header.about nav ul li.a3 {
+    background: url(images/a3.png) no-repeat top center;
+    background-size: 100% 100%;
+    width: 116px;
+    height: 14px;
+    text-align: left;
+    margin-right: 10px;
+}
+header.about nav ul li.a3 a {
+    margin-left: -10px;
+}
+header.about nav ul li.a4 {
+    background: url(images/a4.png) no-repeat top center;
+    background-size: 100% 100%;
+    padding: 32px 11px;
+    margin-right: 20px;
+}
+header.about nav ul li.a5 {
+    background: url(images/a5.png) no-repeat top center;
+    background-size: 100% 100%;
+}
+/* set margin top for the top part which contains the video and sentences */
+.vtop {
+    margin-top: 40px;
+    overflow: hidden;
+}
+/* position the video */
+.vtop iframe {
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+/* set margin bottom for the title "who we are?" */
+.vtop h2 {
+    margin-bottom: 15px;
+}
+/* set margin bottom for paragraphs */
+.vtop p {
+    margin-bottom: 15px;
+}
+/* set the width as 1420 pixels */
+.w1420 {
+    width: 1420px;
+    margin: 0 auto;
+}
+.vbottom ul {
+    overflow: hidden;
+}
+/* the left dolphin image */
+.vbottom ul li .left{
+    float: left;
+    margin-right:10px;
+}
+/* the right dolphin image */
+.vbottom ul li .right {
+    float: right;
+    margin-left:10px;
+}
+/* set properties for both two dolphin images */
+.vbottom ul li img {
+    width: 100px;
+    display: inline-block;
+}
+/* make two dolphin images sticky untill user scroll down to the position that is 400px from the top of their browsers */
+.sticky{
+position: -webkit-sticky;
+position:sticky;
+    top: 400px;
+}
+/* center the words */
+.middle{
+  text-align: center;
+}
+/* position the list part */
+.vlist {
+    margin: 0px 0px 20px 0px;
+}
+/* add vertical distance between lists */
+.vlist li {
+    overflow: hidden;
+    padding: 30px 0px 30px 0px;
+    position: relative;
+}
+/* set the div for containing the image */
+.vlist li .vimg {
+    width: 40%;
+    float: left;
+}
+/* set the size for images and add the "block" attribution to them */
+.vlist li .vimg img {
+    width: 100%;
+    height: 218px;
+    display: block;
+}
+/* set properties to the call to action words */
+.vlist li h3 {
+    width: 45%;
+    float: left;
+    font-size: 25px;
+    text-align: center;
+    margin-left: 3%;
+    margin-top: 80px;
+}
+/* set the left half content in the list */
+.vlist li .items {
+    width: 50%;
+    float: left; 
+}
+/* place those images to the right */
+.vlist li .items.odd .vimg {
+    float: right;
+}
+/* place those call to action words to the right */
+.vlist li .items.odd h3 {
+    float: right;
+    margin-right: 3%;
+    margin-left: 0%;
+}
+/* set the border for lists */
+ .border{
+    border: 3px solid #000;
+    overflow: hidden; }
+/* position the button, and set properties for it as well as add animations to it  */
+.vlist li .pos {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -40px;
+    margin-left: -40px;
+    font-size: 30px;
+    color: #fff;
+    width: 80px;
+    height: 80px; 
+    text-align: center;
+    background-color:#6384C3;
+    border:1px solid #6384C3;
+    border-radius:50%;
+    outline:0; 
+    transition-property:background-color,color,border-color,transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+/* the color of the words and the background color of the button will be replaced by each other when user hovers on the button */
+.vlist li .pos:hover{
+  color: #6384C3;
+  background-color:white;
+  border:1px solid white;
+  transform: rotate(360deg);
+}
+/* the button will go up 5 px when user click on it */
+.vlist li .pos:active{
+  transform: translateY(-5px); 
+}
+/* format the "go" */
+h3.middle{ 
+  margin-top: -62px; 
+  margin-bottom:20px;
+  font-family: 'Secular One', sans-serif;
+}
+
+/* when narrow the page from 1420px */
+@media (max-width: 1420px){
+.w1420 {
+    width: 100%;
+    margin: 0 auto;
+}
+/* two dolphin images aside will disappear */
+.sticky .vbottom{ 
+  display:none;
+  }
+  /* the text on center won't have margin top */
+h3.middle {
+    margin-top: 0px; 
+}
+}
+/* when the max width down to 768px */
+@media (max-width: 790px)
+{
+/* remove the background images for the nav and center the navigation texts in a line */
+header.about nav ul li 
+{ 
+    background: none !important;
+    padding: 0px !important;
+    width:16.5% !important;
+    margin-right: 0px !important;
+    height: auto !important;
+    text-align: center !important;
+}
+/* adjust the position */
+header.about nav ul li a{   
+    padding: 0px 3px;  
+    margin-left: 0px !important;
+}
+/* the two divs in the list will display vertically */
+.vlist li .items {
+    width: 100%;
+    float: none;
+}
+/* set the video and let it occupy the line alone*/
+.vtop iframe{ 
+  max-width:100% !important; 
+  height:auto !important; 
+  float: none;
+  margin-right: 0px; 
+  /* keep it on center */
+  width:99% !important;
+  }
+}
+
+/* when the max width is 480px */
+@media (max-width: 480px){
+  /* set the position for items in the navigation, and now, there are two items in a line */
+  header.about nav ul li {
+    background: none !important;
+    padding: 0px !important;
+    width: 45% !important;
+    margin-right: 0px !important;
+    height: auto !important;
+    text-align: center !important;
+    margin-bottom:20px;
+}
+}
